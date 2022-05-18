@@ -7,7 +7,7 @@ pipelines:
           pipelineName: scanner_pipeline
           stepName: scan_it
           integrations:
-            - name: myPlatformToken
+            - name: TokenIntegration
           environmentVariables:
             scan_target:
               default: "hello-world"
