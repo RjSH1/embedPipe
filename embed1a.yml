@@ -62,13 +62,11 @@ pipelines:
       #      - name: app_buildinfo 
 ###########################################################################
 
-  - name: top_pipeline
-    steps:
+  #- name: top_pipeline
+    #steps:
       - name: scan_controller
         type: TriggerPipeline
-        configuration:
-          inputSteps:
-            - name: publish_app_build        
+        configuration:       
           pipelineName: scanner_pipeline
           stepName: scan_it
           integrations:
