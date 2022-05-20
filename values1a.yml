@@ -3,6 +3,6 @@ gitRepositoryPath: RjSH1/embedPipe  # replace jfrog with your username or org na
 artifactoryIntegration: myArtifactory
 imageName: app_docker_image
 # artifactoryUrl: pipe-master.jfrog-pipelines.com   # replace swampup with your server name
-artifactoryUrl: stg-repo.jfrog.info/ # do not include https
+artifactoryUrl: stg-repo.jfrog.info # do not include https
 sourceRepository: su204-docker-staging-local  # create local repository in Artifactory
 prodRepository: su204-docker-prod-local # create local repository in Artifactory
