@@ -67,10 +67,13 @@ pipelines:
       - name: scan_controller
         type: TriggerPipeline
         configuration:
+          inputSteps:
+            - name: publish_app_build        
           pipelineName: scanner_pipeline
           stepName: scan_it
           integrations:
             - name: TokenIntegration
+           
           environmentVariables:
             scan_target:
               default: "hello-world"
