@@ -52,8 +52,8 @@ pipelines:
           affinityGroup: docker_group
           inputSteps:
             - name: app_push
-          outputResources:
-            - name: app_buildinfo
+          #outputResources:
+            #- name: app_buildinfo
             
       #- name: xrayScanStep
       #  type: XrayScan
@@ -72,7 +72,9 @@ pipelines:
           integrations:
             - name: TokenIntegration
           inputSteps:
-            - name: publish_app_build 
+            - name: publish_app_build
+          outputResources:
+            - name: app_buildinfo            
           environmentVariables:
             scan_target:
               default: "hello-world"
