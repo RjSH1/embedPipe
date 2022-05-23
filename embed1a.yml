@@ -70,7 +70,9 @@ pipelines:
           pipelineName: scanner_pipeline
           stepName: scan_it
           integrations:
-            - name: TokenIntegration         
+            - name: TokenIntegration  
+          inputSteps:
+            - name: publish_app_build            
           environmentVariables:
             scan_target:
               default: "hello-world"
